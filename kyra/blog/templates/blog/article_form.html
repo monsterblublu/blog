@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block title %} Create blog {% endblock%}
+{% block content %}
+  <div class="container mt-5">
+    <div class="row">
+
+
+    {% bootstrap_messages %}
+
+{# Display a form #}
+<form method="POST" enctype="multipart/form-data" class="form">
+  {% csrf_token %}
+  {% bootstrap_form form %}
+  {% buttons %}
+    <button type="submit" class="btn btn-primary">
+      Submit
+    </button>
+  {% endbuttons %}
+</form>
+      </div>
+  </div>
+
+  <script type="text/javascript">
+    var name = "{{user.first_name}} {{user.last_name}}";
+    document.getElementById("author-name").value = name;
+  </script>
+{% endblock %}

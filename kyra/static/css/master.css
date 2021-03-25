@@ -1,0 +1,172 @@
+
+
+body {
+	margin: 0;
+	font-family: "Open Sans" !important;
+}
+
+
+@media (min-width: 1199.98px) {
+	.container{
+		padding-left: 13em;
+		padding-right: 13em;
+	}
+
+	.list-article{
+		padding-left: 8em;
+		padding-right: 8em;
+	}
+
+	.navbar-custom {
+			background-color: #fff;
+	    margin : auto;
+			box-shadow: 0 2px 14px rgba(159, 165, 165, 0.23);
+			padding-top: 20px;
+			padding-bottom: 20px;
+
+	}
+
+	.post-meta li {
+	    list-style-type: none;
+			display: inline-block;
+			margin-left: -2.4em;
+	}
+}
+.navbar-custom {
+		background-color: #fff;
+    margin : auto;
+		box-shadow: 0 2px 14px rgba(159, 165, 165, 0.23);
+
+}/* change the brand and text color */
+.navbar-custom .navbar-brand{
+	 font-family: 'Arvo', serif;
+	 color: green;
+}
+.navbar-custom .navbar-text {
+    color: #212529;
+}/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #212529;
+}/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: green;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
+.navbar-toggler {
+  border: none ;
+
+}
+
+.masthead {
+	padding: 3rem 0 7rem;
+	position: relative;
+	background: linear-gradient(to right, #000000, #000000);
+  color: #ffffff;
+	background-size: cover;
+	z-index: 0;
+}
+
+.masthead-page {
+	padding: 8rem 0 0rem;
+}
+
+.masthead-page-article {
+	padding: 5rem 0 0rem;
+}
+
+svg{
+  overflow: hidden;
+}
+
+
+
+.article-app {
+	margin-top: -7rem;
+}
+.post-meta li {
+    list-style-type: none;
+		display: inline;
+		margin-left: -2.4em;
+}
+
+.thumbnail{
+	width: 100%;
+}
+
+.card{
+	padding: 1rem;
+	border: none;
+	box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.card-img-top{
+	border: none;
+	border-radius: .5rem;
+}
+
+.card-title{
+	color: #000000;
+	text-decoration: none;
+}
+
+.card-title:hover
+{
+     color: green;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+
+.card-text{
+	font-size: 14px;
+}
+.detail-article img{
+	margin-bottom: 15px;
+	padding: .25rem;
+	/*background-color: #fff;
+	border: 1px solid #dee2e6;*/
+	border: 0;
+	vertical-align: middle;
+	box-shadow: 0px 2px 25px 0px rgba(72, 76, 83, 0.22);
+	border-radius: .25rem;
+	max-width: 100%;
+	height: auto;
+}
+
+.title-article{
+	color: #2c2f33;
+	font-family: "Open Sans";
+	font-size: 32px;
+	font-weight: bold;
+}
+
+p{
+	color: #5f5f5f !important
+}
+
+blockquote{
+	margin: 0px 0;
+	color: #666;
+	border-left: 3px solid black;
+	padding-left: 10px;
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+}
+
+pre {
+    background: #eee;
+    padding: 10px 15px;
+		border-radius: 3px;
+    overflow: auto;
+		color : '#' + Math.floor(Math.random()*16777215).toString(16);
+}
